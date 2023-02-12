@@ -1,7 +1,12 @@
 <template>
   <q-page class="constrain-more q-pa-md">
     <div class="camera-frame q-pa-md">
-      <img class="full-width" src="images/mishka.jpeg" />
+      <video
+        ref="video"
+        class="full-width"
+        autoplay
+        playsinline="true"
+      ></video>
     </div>
 
     <div class="text-center q-pa-md">
@@ -50,6 +55,19 @@ export default {
         date: Date.now()
       }
     }
+  },
+  methods: {
+    initCamera() {
+      navigator.mediaDevices.getUserMedia({
+        video: true
+      }).then(stream => {
+        this.$refs.video.srcObject = stream
+      })
+    }
+  },
+
+  mounted() {
+    this.initCamera()
   }
 
 };
