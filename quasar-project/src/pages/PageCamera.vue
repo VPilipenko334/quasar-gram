@@ -7,6 +7,12 @@
         autoplay
         playsinline="true"
       ></video>
+
+      <canvas
+        ref="canvas"
+        class="full-width"
+        height="240"
+        ></canvas>
     </div>
 
     <div class="text-center q-pa-md">

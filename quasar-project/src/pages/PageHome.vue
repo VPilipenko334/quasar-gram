@@ -37,14 +37,24 @@
       <div class="col-4">
         <q-item class="fixed">
           <q-item-section avatar>
-            <q-avatar>
+            <q-avatar class="q-mb-sm">
               <img src="https://avatars.githubusercontent.com/u/63820576?v=4" />
+            </q-avatar>
+            <q-avatar class="q-mb-sm">
+              <img src="https://media.licdn.com/dms/image/C4E03AQGHwLqoPrpH4A/profile-displayphoto-shrink_800_800/0/1516872519335?e=2147483647&v=beta&t=SvSJu8igG3ZNvvJsHXCjrkDlzjE-braIItyoCsssNds" />
+            </q-avatar>
+            <q-avatar class="q-mb-sm">
+              <img src="https://avatars.githubusercontent.com/u/11130587?v=4" />
             </q-avatar>
           </q-item-section>
 
           <q-item-section>
             <q-item-label class="text-bold">veronika_instagram</q-item-label>
-            <q-item-label caption> Veronika Pilipenko </q-item-label>
+            <q-item-label caption class="q-mb-sm"> Veronika Pilipenko </q-item-label>
+            <q-item-label class="text-bold">bryce_harlan</q-item-label>
+            <q-item-label caption class="q-mb-sm"> Bryce Harlan </q-item-label>
+            <q-item-label class="text-bold">alex_lopez</q-item-label>
+            <q-item-label caption class="q-mb-sm"> Alex Lopez</q-item-label>
           </q-item-section>
         </q-item>
       </div>
@@ -81,7 +91,7 @@ export default {
         },
         {
           id: 4,
-          caption: "Mishkass baby teeth coming in.",
+          caption: "Mishkas baby teeth coming in.",
           date: "June 27th, 9:43 A.M.",
           location: "East Village, New York",
           imageUrl: "images/baby_mish.jpeg",
