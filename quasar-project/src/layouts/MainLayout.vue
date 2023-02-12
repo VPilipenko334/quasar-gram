@@ -2,9 +2,22 @@
   <q-layout view="lHh Lpr lFf">
     <q-header class="bg-white text-grey-10" bordered>
       <q-toolbar>
+        <q-btn
+          to="/camera"
+          flat
+          round
+          size="18px"
+          icon="eva-camera-outline"
+          dense
+        />
+
+        <q-separator spaced vertical inset />
         <q-toolbar-title class="text-center text-grand-hotel text-h4 text-bold"
           >QuasarGram</q-toolbar-title
         >
+
+        <q-separator spaced vertical inset />
+        <q-btn to="/" flat round size="18px" icon="eva-home-outline" dense />
       </q-toolbar>
     </q-header>
 
@@ -14,8 +27,8 @@
         active-color="primary"
         indicator-color="transparent"
       >
-        <q-route-tab to="/" icon="eva-home-outline" />
-        <q-route-tab to="/camera" icon="eva-camera-outline" />
+        <!-- <q-route-tab to="/" icon="eva-home-outline" />
+        <q-route-tab to="/camera" icon="eva-camera-outline" /> -->
       </q-tabs>
     </q-footer>
 
